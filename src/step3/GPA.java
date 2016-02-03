@@ -18,10 +18,11 @@ public class GPA {
         double creditHour = 0, grade = 0, gradePoint = 0, totalCreditHours = 0, totalGradePoints = 0, gpa;
 
         if (args == null || args.length == 0){ //if no arguments are entered
-            System.out.println("No arguments entered.");
+            //System.out.println("No arguments entered.");
+            throw new IllegalArgumentException("Error: No Arguments entered!");
         }
         else{
-            for (int i = 0;  i < args.length;  i++){ //iterates over the arguments entered
+            for (int i = 0;  i < args.length;  i += 2){ //iterates over the arguments entered
 
                 if(gradeCount < args.length){ //iterates through grades in args array
                     switch(args[gradeCount].toUpperCase()){ //decides appropriate grade points for each grade entered

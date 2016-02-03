@@ -27,7 +27,8 @@ public class Av {
         double average;
 
         if (args == null || args.length == 0){ //if no arguments are entered
-            System.out.println("No arguments entered.");
+            //System.out.println("No arguments entered.");
+            throw new IllegalArgumentException("Error: No Arguments entered!");
         }
         else{
             for (int i = 0;  i < args.length;  i++){ //iterates over the arguments entered

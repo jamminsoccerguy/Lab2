@@ -7,7 +7,7 @@ package demo;
  */
 
 /**
- * Command line Demo
+ * Lab 2: Command line Demo
  */
 public class MyProg {
     public static void main(String[] args) {
